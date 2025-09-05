@@ -1,7 +1,15 @@
-# Large data directories and files
+# Large data directories and files (now removed from repo)
 data/
+docs/
+extras/
+"NARSC readings"/
+firewise_variables_0605_2024/
 firewise_variables_0605_2024-20250830T030637Z-1-001.zip
 NARSC readings-20250901T214033Z-1-001.zip
+
+# Working/temp directories
+reconstructed_outputs/
+high_risk_outputs/
 
 # OS generated files
 .DS_Store

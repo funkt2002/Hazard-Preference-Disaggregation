@@ -1,5 +1,0 @@
-dataset,approach,alpha,avg_rank,min_rank,max_rank,top_500,top_500_rate
-raw_minmax_all,piecewise,4,831.7916666666666,22,4442,143,54.166666666666664
-raw_minmax_all,linear,1,3652.117424242424,1140,11387,0,0.0
-raw_minmax_wui,piecewise,4,731.526923076923,1,3677,151,58.07692307692308
-raw_minmax_wui,linear,1,2915.4,561,7824,0,0.0
