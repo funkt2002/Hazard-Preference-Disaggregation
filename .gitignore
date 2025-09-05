@@ -1,15 +1,14 @@
-# Large data directories and files (now removed from repo)
+# Large data directories and files (keep local only)
 data/
+outputs/
+archive/
+*.zip
+
+# Documentation and readings (keep local only)  
 docs/
 extras/
 "NARSC readings"/
 firewise_variables_0605_2024/
-firewise_variables_0605_2024-20250830T030637Z-1-001.zip
-NARSC readings-20250901T214033Z-1-001.zip
-
-# Working/temp directories
-reconstructed_outputs/
-high_risk_outputs/
 
 # OS generated files
 .DS_Store
@@ -85,11 +84,13 @@ high_risk_outputs/
 *.temp
 *.log
 
-# Large shapefile components (keep main .shp but ignore large auxiliary files)
-*.shx
-*.dbf
-*.prj
-*.cpg
+# Allow essential shapefile components in MAIN_OUTPUTS
+!MAIN_OUTPUTS/**/*.shx
+!MAIN_OUTPUTS/**/*.dbf  
+!MAIN_OUTPUTS/**/*.prj
+!MAIN_OUTPUTS/**/*.cpg
+
+# Block large shapefile components elsewhere (but allow essential ones)
 *.sbn
 *.sbx
 *.fbn
